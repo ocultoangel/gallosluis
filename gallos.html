@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        form {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        label, input, select {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="text"], select {
+            width: calc(100% - 22px); /* Adjusted width to accommodate borders and paddings */
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #006699;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #004466;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GALLOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">PRINCIPAL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <h2>BIENVENIDOS</h2>
+        <p><i>Hola, en esta área contamos con diversos productos que serán de su agrado.</i></p>
+        <img src="GALLOS1.jpg" alt="Imagen de gallos" width="200px">
+        <hr>
+    </section>
+
+    <section id="prices">
+        <h2>Tabla de Precios</h2>
+        <table border="1">
+            <tr>
+                <td></td>
+                <td>Precio en kg</td>
+                <td>Precio al 1/2</td>
+                <td>Precio al 1/4</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>$100</td>
+                <td>$50</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>$5000</td>
+                <td>$2500</td>
+                <td></td> <!-- Agregar valores faltantes según necesidad -->
+            </tr>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Formulario de Precios</h2>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="precio">Precio</label>
+            <input type="text" id="precio" name="precio" required>
+            <label for="peso">Peso</label>
+            <input type="text" id="peso" name="peso" required>
+            <label for="tipo">Tipo</label>
+            <select id="tipo" name="tipo">
+                <option value="fresco">Fresco</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GALLOS. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
